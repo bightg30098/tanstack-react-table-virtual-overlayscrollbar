@@ -122,6 +122,8 @@ export default function VirtualTable() {
     return () => osInstance()?.destroy();
   }, [initialize, osInstance]);
 
+  console.log({ scrollState });
+
   return (
     <div ref={scrollRef} className='max-h-96 max-w-xl overflow-auto ring-1 m-4 relative'>
       <div ref={parentRef} className='overflow-hidden'>
