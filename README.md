@@ -15,4 +15,4 @@ yarn
 yarn dev
 ```
 
-or open it in [CodeSandbox](https://codesandbox.io/s/github/bightg30098/tanstack-react-table-virtual-overlayscrollbar)
+or open it in [CodeSandbox](https://codesandbox.io/p/github/bightg30098/tanstack-react-table-virtual-overlayscrollbar/main?workspaceId=43196eca-0cc3-4dd5-9844-61e48094a441)
