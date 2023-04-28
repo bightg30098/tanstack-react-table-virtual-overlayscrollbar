@@ -103,11 +103,11 @@ export default function VirtualTable() {
         const scrollX = (e.elements().scrollEventElement as HTMLElement).scrollLeft;
         const scrollY = (e.elements().scrollEventElement as HTMLElement).scrollTop;
 
-        if ((scrollX > 0 && scrollX === 0) || (scrollX === 0 && scrollX > 0)) {
+        if ((scrollX > 0 && scrollState.scrollX === 0) || (scrollX === 0 && scrollState.scrollX > 0)) {
           return setScrollState((prev) => ({ ...prev, scrollX, lastScrollXTime: Date.now() }));
         }
 
-        if ((scrollY > 0 && scrollY === 0) || (scrollY === 0 && scrollY > 0)) {
+        if ((scrollY > 0 && scrollState.scrollY === 0) || (scrollY === 0 && scrollState.scrollY > 0)) {
           return setScrollState((prev) => ({ ...prev, scrollY, lastScrollYTime: Date.now() }));
         }
       }
